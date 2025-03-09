@@ -1,0 +1,49 @@
+.booking-form {
+  
+  text-align: center;
+  padding: 20px;
+  
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  background:whitesmoke;
+  
+}
+
+.book-trip {
+  background-color: #1c89ea;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  border: 2px solid #1c89ea;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+
+.send-btn {
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1c89ea;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #004080;
+}
+
+@media (max-width: 768px) {
+  .booking-form {
+    width: 100%;
+  }
+  .form-container {
+    padding: 15px;
+  }
+}
