@@ -1,43 +1,40 @@
-import React, { useRef } from 'react'
-import Navbar from './Navbar/Navbar'
-import Footer from './Footer/Footer'
-import './App.css'
-import './Bookyour/Bookingform.css'
-import BookingForm from './Bookyour/Bookingform'
-import { Button } from 'react-bootstrap'
-import Carousel from './Carousel/Carousel'
-import TestimonialSlider from './Testing/Testing'
-import Gallery from './Gallery'
- 
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar/Navbar.js';
+import Footer from './Footer/Footer.js';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import KashmirTour from './pages/KashmirTour.js';
+import Book from './pages/Book';
+import RajasthanTour from './pages/RajasthanTour.js';
+import LadakhTour from './pages/LadakhTour.js';
+ import HimachalTour from './pages/HimachalTour';
+import KeralaTour from './pages/KeralaTour.js';
+import GoaTour from './pages/GoaTour.js';
+import GoldenTriangle from './pages/GoldenTriangle.js';
+import SameDayTour from './pages/SameDayTour.js';
 
 function App() {
-  const formRef = useRef(null);
-
-  const scrollToForm = () => {
-    formRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <div  >
+    <>
       <Navbar />
-      <div className='background-image  '>
-        <img src="https://www.nationalunlock.com/wp-content/uploads/2023/07/travel-agency.jpg" alt="Travel Agency" />
-        <div className='overlay'>
-          <h1>Welcome to Traveller</h1>
-          <Button onClick={scrollToForm} className="explore-btn">
-            Book Now Explore Now
-          </Button>
-        </div>
-      </div>
-      <div ref={formRef}> 
-        <BookingForm />
-      </div>
-      <Carousel/>
-       <Gallery/>
-      <TestimonialSlider/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/kashmir" element={<KashmirTour />} />
+        <Route path="/booking" element={<Book />} />
+        <Route path="/rajasthan" element={<RajasthanTour />} />
+        <Route path="/ladakh" element={<LadakhTour />} />
+       <Route path="/himachal" element={<HimachalTour />} />
+         <Route path="/kerala" element={<KeralaTour />} />
+         <Route path="/goa" element={<GoaTour />} />
+         <Route path="/golden-triangle" element={<GoldenTriangle />} />
+        <Route path="/same-day" element={<SameDayTour />} />  
+      </Routes>
       <Footer />
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
