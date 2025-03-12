@@ -1,0 +1,111 @@
+/* General Page Styles */
+.tour-page {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #005aa7, #e0f7fa);
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.tour-hero {
+    position: relative;
+    padding: 20px;
+}
+
+.tour-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.tour-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 8px 16px rgba(0, 90, 167, 0.7);
+}
+
+/* Tour Description */
+.tour-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #004d80;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 90, 167, 0.3);
+}
+
+/* Section Headings */
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #005aa7;
+    margin-bottom: 20px;
+}
+
+/* Itinerary Section */
+.itinerary-card-wrapper {
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.itinerary-card {
+    background:rgba(255, 255, 255, 0.85);
+    color: #004d80;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 90, 167, 0.3);
+}
+
+/* Inner Cards for Itinerary */
+.inner-card {
+    background: rgba(255, 255, 255, 0.85);
+    color: #004d80;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 90, 167, 0.2);
+}
+
+/* Pricing Section */
+.pricing-card-wrapper {
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.85);
+    color: #004d80;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 90, 167, 0.3);
+}
+
+.pricing-text {
+    font-size: 1.2rem;
+    color: #004d80;
+}
+
+/* Booking Button */
+.booking-button-wrapper {
+    margin-top: 20px;
+}
+
+.book-now {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 1.4rem;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 75, 43, 0.7);
+}
+
+.book-now:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0 0 15px rgba(255, 75, 43, 1);
+}
