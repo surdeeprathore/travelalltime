@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .footer-promo {
   color:black;
@@ -42,6 +43,49 @@
   
 }
 
+=======
+.App {
+    text-align: center;
+  }
+  .background-image {
+    margin-top: 55px;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full Screen Height */
+    overflow: hidden;
+  }
+  
+  .background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image will cover the entire div */
+    filter: brightness(0.6); /* Dark overlay effect */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .overlay p {
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+  
+>>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -53,10 +97,14 @@
     }
   }
   
+<<<<<<< HEAD
   .footer-banner{
    
     height:410px;
   }
+=======
+  
+>>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
   .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -91,6 +139,7 @@
       transform: rotate(360deg);
     }
   }
+<<<<<<< HEAD
   
   .background-image {
     position: relative;
@@ -145,4 +194,6 @@
   .explore-btn:hover {
     background-color: #0056b3;
   }
+=======
+>>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
   
