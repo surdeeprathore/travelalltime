@@ -1,7 +1,7 @@
 .footer-container {
   background: linear-gradient(to right, #005aa7, #1c89ea);
   color: white;
-  padding: 50px 0;
+ 
   text-align: center;
 }
 
@@ -12,15 +12,15 @@
   /* background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2021/06/02/20/istock-833264986.jpg);
   background-size: cover;
   background-attachment: fixed; */
-  background-color: ;
-  border-radius: 10px;
+ 
+  
   padding: 40px 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .footer-section h3 {
   color: #fff;
-  margin-bottom: 20px;
+ 
   font-size: 24px;
 }
 
@@ -70,12 +70,8 @@
 
 .footer-bottom {
   background: #1c89ea;
-  margin-top: 20px;
+  
   padding: 15px 0;
   font-weight: bold;
-  border-radius: 0 0 10px 10px;
-}
-
-.footer-bottom p {
-  margin: 0;
+ 
 }

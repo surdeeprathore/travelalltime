@@ -1,68 +1,95 @@
-.booking-form {
+/* Prevent Horizontal Scrolling */
+body, html {
+  overflow-x: hidden;
   width: 100%;
 }
 
+/* Ensure Container Stays Within Viewport */
 .testimonial-section {
-  width: 100%;
-  background: #f8f9fa;
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.testimonial-container {
-  max-width: 600px;
+/* Testimonial Card Styling */
+.testimonial-card {
+  text-align: center;
+  background: #ffffff;
   padding: 20px;
-  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* Image Styling */
+.testimonial-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Star Rating */
+.stars {
+  font-size: 1.2rem;
+  color: #fbc531;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background: #f8f9fa;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
-.testimonial-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
 }
 
-.testimonial-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.testimonial-card p {
-  font-size: 1.1rem;
-  color: #444;
-  font-style: italic;
-}
-
-.testimonial-card h5 {
-  margin-top: 15px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.why-choose-us {
-  padding: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  font-size: 1.2rem;
+.why-choose-us li {
+  font-size: 1rem;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-li svg {
-  margin-right: 10px;
-  color: #fbc531;
+/* Ensure the row doesn't overflow */
+.row {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+  }
+
+  .why-choose-us {
+    max-width: 90%;
+    text-align: center;
+  }
 }

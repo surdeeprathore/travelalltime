@@ -30,7 +30,7 @@ function Footer() {
         </div>
       </div>
       <div className='footer-bottom'>
-        <p>Use of the service implies acceptance of the terms.</p>
+        <p>@2025.Traveller_webiste. All the Rights reserved About Us | Terms of Use | Privacy Policy</p>
       </div>
     </div>
   );

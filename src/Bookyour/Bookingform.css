@@ -1,49 +1,62 @@
 .booking-form {
-  
   text-align: center;
-  padding: 20px;
-  
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  background:whitesmoke;
-  
+   
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #005aa7, #fffde4);
+  width: 100vw;
+  max-width: 100%;
 }
 
 .book-trip {
   background-color: #1c89ea;
   color: white;
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 10px 10px 0 0;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .form-container {
   border: 2px solid #1c89ea;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 10px 10px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .send-btn {
   width: 100%;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #1c89ea;
+  background-color: #d9534f;
+  color: white;
+  padding: 12px;
   border: none;
-  transition: background 0.3s ease;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .send-btn:hover {
-  background-color: #004080;
+  background-color: #c9302c;
 }
 
 @media (max-width: 768px) {
-  .booking-form {
-    width: 100%;
-  }
   .form-container {
-    padding: 15px;
+    width: 90%;
+    padding: 20px;
   }
 }

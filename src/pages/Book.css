@@ -1,16 +1,16 @@
-.booking-page {
+.booking-page1 {
     text-align: center;
     padding: 50px 20px;
 }
 
-.booking-title {
+.booking-title1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #005aa7;
     margin-bottom: 20px;
 }
 
-.booking-form {
+.booking-form1 {
     max-width: 500px;
     margin: auto;
     background: #fff;
@@ -19,13 +19,13 @@
     box-shadow: 0 4px 10px rgba(0, 90, 167, 0.3);
 }
 
-.submit-btn {
+.submit-btn1 {
     background: #005aa7;
     color: white;
     width: 100%;
     margin-top: 15px;
 }
 
-.submit-btn:hover {
+.submit-btn1:hover {
     background: #004080;
 }

@@ -24,13 +24,13 @@ const Book = () => {
 
   return (
     <motion.div 
-      className="booking-page"
+      className="booking-page1"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <h1 className="booking-title">Book Your Trip</h1>
-      <Form className="booking-form" onSubmit={handleSubmit}>
+      <h1 className="booking-title1">Book Your Trip</h1>
+      <Form className="booking-form1" onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" name="name" onChange={handleChange} required />
@@ -66,7 +66,7 @@ const Book = () => {
           <Form.Control as="textarea" rows={3} name="message" onChange={handleChange} />
         </Form.Group>
 
-        <Button className="submit-btn" type="submit">Submit Booking</Button>
+        <Button className="submit-btn1" type="submit">Submit Booking</Button>
       </Form>
     </motion.div>
   );

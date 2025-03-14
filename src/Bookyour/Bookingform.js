@@ -4,49 +4,38 @@ import './Bookingform.css';
 
 function BookingForm() {
   return (
-    <div className="booking-form text-center py-5" style={{ background: 'linear-gradient(90deg, #005aa7, #fffde4)' }}>
-      <h4 className="book-trip mb-4">
-        📋 BOOK YOUR TRIP NOW
-      </h4>
-      <div className="form-container mx-auto p-4">
+    <div className="booking-form text-center py-5">
+      <h2 className="book-trip">📋 BOOK YOUR TRIP NOW</h2>
+      <div className="form-container mx-auto shadow-lg">
         <Form>
-          <Row>
-            <Col md={4} sm={12} xs={12} className="mb-3">
-              <Form.Control type="text" placeholder="Full Name" />
+          <Row className="mb-3">
+            <Col md={6} sm={12} className="mb-3">
+              <Form.Control type="text" placeholder="✏️ Full Name" className="input-field" />
             </Col>
-            <Col md={4} sm={12} xs={12} className="mb-3">
-              <Form.Control type="number" placeholder="Phone Number" />
-            </Col>
-            <Col md={4} sm={12} xs={12} className="mb-3">
-              <Form.Control type="email" placeholder="Email Id" />
+            <Col md={6} sm={12} className="mb-3">
+              <Form.Control type="email" placeholder="📧 Email Address" className="input-field" />
             </Col>
           </Row>
 
-          <Row className="mt-3">
-            <Col md={3} sm={6} xs={12} className="mb-3">
-              <Form.Select>
-                <option>No. of Adult</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </Form.Select>
+          <Row className="mb-3">
+            <Col md={4} sm={12}>
+              <Form.Control type="text" placeholder="📍 Destination" className="input-field" />
             </Col>
-            <Col md={3} sm={6} xs={12} className="mb-3">
-              <Form.Select>
-                <option>No. of Child</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </Form.Select>
+            <Col md={4} sm={6}>
+              <Form.Control type="text" placeholder="📞 Phone Number" className="input-field" />
             </Col>
-            <Col md={3} sm={12} xs={12} className="mb-3">
-              <Form.Control type="date" />
+            <Col md={4} sm={6}>
+              <Form.Control type="number" placeholder="👨‍👩‍👧‍👦 No. of Persons" className="input-field" />
             </Col>
-            <Col md={3} sm={12} xs={12} className="mb-3 text-center">
-              <Button variant="danger" className="send-btn w-100">
-                SEND ENQUIRY →
+          </Row>
+
+          <Row className="mb-4">
+            <Col md={6} sm={12}>
+              <Form.Control type="date" className="input-field" />
+            </Col>
+            <Col md={6} sm={12}>
+              <Button variant="success" className="send-btn w-100 animate-btn">
+                ✈️ SEND ENQUIRY →
               </Button>
             </Col>
           </Row>
@@ -54,6 +43,6 @@ function BookingForm() {
       </div>
     </div>
   );
-}
+};
 
 export default BookingForm;
