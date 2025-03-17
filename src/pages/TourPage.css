@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ 
 /* General Tour Page Styling */
 .tour-page {
     max-width: 1200px;
@@ -89,8 +89,7 @@
     background-color:#053056;
   }
   
-=======
-/* General Page Styles */
+ 
 .tour-page {
     text-align: center;
     padding: 50px 20px;
@@ -188,17 +187,18 @@
 }
 
 .book-now {
-    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    background:#004d80;
     color: white;
     font-size: 1.4rem;
     padding: 12px 25px;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(255, 75, 43, 0.7);
+    box-shadow: 0 0 10px #004d80;
 }
 
 .book-now:hover {
-    background: linear-gradient(45deg, #ff4b2b, #ff416c);
-    box-shadow: 0 0 15px rgba(255, 75, 43, 1);
+    background:rgb(41, 190, 41);
+    
+    
 }
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
+ 

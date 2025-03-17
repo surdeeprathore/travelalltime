@@ -16,11 +16,11 @@ const HimachalTour = () => {
       <motion.div className="tour-hero">
         <h1 className="tour-title">Himachal Tour Packages</h1>
         <motion.img
-<<<<<<< HEAD
+ 
           src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1641221572_h8.jpg.webp"
-=======
-          src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1241785171_20191022173231.jpg"
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
+ 
+          // src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1241785171_20191022173231.jpg"
+ 
           alt="Himachal Tour"
           className="tour-image"
         />

@@ -1,8 +1,12 @@
-<<<<<<< HEAD
+ 
 
 .footer-promo {
   color:black;
-  padding: 20px;
+  /* padding: 20px; */
+  background-image: url(https://png.pngtree.com/background/20220725/original/pngtree-illustration-travel-landmarks-architecture-morocco-in-marrakech-picture-image_1772376.jpg);
+  background-size: cover;
+  background: fixed;
+  height: 380px;
  
 }
 .promo-title {
@@ -43,7 +47,7 @@
   
 }
 
-=======
+ 
 .App {
     text-align: center;
   }
@@ -59,7 +63,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Image will cover the entire div */
-    filter: brightness(0.6); /* Dark overlay effect */
+    /* filter: brightness(0.6);  */
   }
   
   .overlay {
@@ -85,7 +89,7 @@
     letter-spacing: 2px;
   }
   
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
+ 
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -97,14 +101,7 @@
     }
   }
   
-<<<<<<< HEAD
-  .footer-banner{
-   
-    height:410px;
-  }
-=======
-  
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
+ 
   .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -139,7 +136,7 @@
       transform: rotate(360deg);
     }
   }
-<<<<<<< HEAD
+ 
   
   .background-image {
     position: relative;
@@ -194,6 +191,5 @@
   .explore-btn:hover {
     background-color: #0056b3;
   }
-=======
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
+ 
   

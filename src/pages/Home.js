@@ -5,11 +5,7 @@ import Carousel from "../Carousel/Carousel";
 import Gallery from "../Gallery";
 import TestimonialSlider from "../Testing/Testing";
 import '../pages/Home.css'
-<<<<<<< HEAD
 import Banner from "../Banner";
- 
-=======
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
 const Home = () => {
   const formRef = useRef(null);
 
@@ -31,7 +27,7 @@ const Home = () => {
           </Button>
         </div>
       </div>
-<<<<<<< HEAD
+ 
       <div ref={formRef} style={{backgroundColor:"blue"}}>
         <BookingForm  />
       </div>
@@ -57,14 +53,9 @@ const Home = () => {
     </section>
 
        </div>
-=======
-      <div ref={formRef}>
-        <BookingForm />
-      </div>
-      <Carousel />
-      <Gallery />
-      <TestimonialSlider />
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
+       
+       
+ 
     </div>
   );
 };

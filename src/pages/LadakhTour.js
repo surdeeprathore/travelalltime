@@ -16,11 +16,11 @@ const LadakhTour = () => {
       <motion.div className="tour-hero">
         <h1 className="tour-title">Ladakh Tour Packages</h1>
         <motion.img
-<<<<<<< HEAD
+ 
           src="https://www.worldsdreamtravels.com/assets/images/package-images/1647861167_ladakh1jpg.jpg"
-=======
-          src="https://www.hptourtravel.com/wp-content/uploads/2023/06/Leh_Ladakh_Header_Image-1.webp"
->>>>>>> b2088b22ac606b449043eb4aa5429ca68ba996cb
+ 
+          // src="https://www.hptourtravel.com/wp-content/uploads/2023/06/Leh_Ladakh_Header_Image-1.webp"
+ 
           alt="Ladakh Tour"
           className="tour-image"
         />
