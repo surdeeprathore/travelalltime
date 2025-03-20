@@ -55,8 +55,8 @@ const RajasthanTour = () => {
                   <li>✔️ 4 & 5 Star Hotels</li>
                   <li>✔️ Free Wi-Fi & Breakfast</li>
                   <li>✔️ Swimming Pool & Spa</li>
-                  <li>✔️ 24/7 Room Service</li>
-                  <li>✔️ Complimentary Airport Pickup</li>
+                  {/* <li>✔️ 24/7 Room Service</li>
+                  <li>✔️ Complimentary Airport Pickup</li> */}
                 </ul>
               </Card.Body>
             </Card>

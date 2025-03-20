@@ -2,15 +2,20 @@
  
 
 .booking-page1 {
- 
+    
     text-align: center;
     padding: 50px 20px;
+    background-image: url("https://img.freepik.com/free-vector/flat-design-travel-background_23-2149193475.jpg?t=st=1742098515~exp=1742102115~hmac=203f1b57034843b3de066e388b1fcc5bbc6a293ac83ecc7943ce9a4213e753be");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    
 }
- 
+
  
  
 .booking-title1 {
- 
+     margin-top: 25px; 
     font-size: 2.5rem;
     font-weight: bold;
     color: #005aa7;

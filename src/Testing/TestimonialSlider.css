@@ -3,7 +3,9 @@ body, html {
   overflow-x: hidden;
   width: 100%;
 }
-
+.testimonial-container h2{
+  color: #005aa7;
+}
 /* Ensure Container Stays Within Viewport */
 .testimonial-section {
   width: 100vw;
@@ -38,58 +40,4 @@ body, html {
 .stars {
   font-size: 1.2rem;
   color: #fbc531;
-}
-
-/* Why Choose Us Section */
-.why-choose-us {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-.why-choose-us ul {
-  list-style: none;
-  padding: 0;
-}
-
-.why-choose-us li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Ensure the row doesn't overflow */
-.row {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* RESPONSIVE FIXES */
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .col-md-12 {
-    width: 100%;
-  }
-
-  .testimonial-card {
-    max-width: 90%;
-  }
-
-  .why-choose-us {
-    max-width: 90%;
-    text-align: center;
-  }
 }

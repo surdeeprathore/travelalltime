@@ -1,6 +1,7 @@
 // banner.js (React Component)
 import React, { useEffect } from "react";
 import "./banner.css";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   useEffect(() => {
@@ -27,8 +28,10 @@ const Banner = () => {
     >
       <div className="banner-content">
         <h1 className="banner-text">Explore. Dream. Discover.</h1>
+        
         <p className="banner-subtext">Unforgettable Journeys Await</p>
-        <button className="banner-btn">Plan Your Next Adventure</button>
+        <Link to='/booking'>
+        <button className="banner-btn">Plan Your Next Adventure</button></Link>
       </div>
     </div>
   );

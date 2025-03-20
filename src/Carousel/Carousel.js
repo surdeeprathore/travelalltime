@@ -1,66 +1,65 @@
-import React, { useEffect, useState } from 'react';
-import { FaHotel, FaUtensils, FaCar } from 'react-icons/fa';
-import './Carousel.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Carousel.css";
 
-const cards = [
-  { title: 'Jaipur Tour Package', nights: '2 Nights/3 Days', places: 'Jaipur', img: 'https://www.kabiratours.com/wp-content/uploads/2018/03/one-day-jaipur-sightseeing-tour.jpg', },
-  { title: 'Golden Triangle Tour', nights: '11 Nights/12 Days', places: 'Delhi » Rishikesh » Agra » Jaipur', img: 'https://www.indiaprivatedriver.com/storage/uploads/dhl-jpr-agra_1635429381.jpg', },
-  { title: 'Amritsar Tour Package', nights: '9 Nights/10 Days', places: 'Delhi » Agra » Jaipur » Amritsar', img: 'https://dynamic.tourtravelworld.com/package-images/photo-small/dir_15/439900/261219.jpg', },
-  { title: 'Kerala Tour Package', nights: '6 Nights/7 Days', places: 'Cochin »Thekkady » Alleppey', img: 'https://dynamic.tourtravelworld.com/package-images/photo-big/dir_17/494899/309078.jpg', },
-  { title: 'Goa Beach Package', nights: '3 Nights/4 Days', places: 'Goa', img: 'https://5.imimg.com/data5/SELLER/Default/2022/6/CN/CN/SB/147670257/best-selling-goa-trip-package-for-friends-4-days-3-nights-500x500.png', },
-  { title: 'Manali Tour Package', nights: '4 Nights/5 Days', places: 'Manali', img: 'https://manalitourplanner.com/wp-content/uploads/2024/08/Rohtang-Pass_-Where-Snow-Meets-Sky-1024x576.png', },
-  { title: 'Ladakh Adventure', nights: '7 Nights/8 Days', places: 'Leh » Nubra Valley » Pangong Lake', img: 'https://travellerchoiceladakh.com/blog/wp-content/uploads/2024/08/Top-Places-to-Visit-in-Leh-Ladakh-in-December.jpg', },
-];
+const CardSlider = () => {
+  const cardsData = [
+    { id: 1, name: "Jaipur Tour Package", description: "2 Nights/3 Days", image: "https://www.kabiratours.com/wp-content/uploads/2018/03/one-day-jaipur-sightseeing-tour.jpg" },
+    { id: 2, name: "Golden Triangle Tour", description: "11 Nights/12 Days", image: "https://www.indiaprivatedriver.com/storage/uploads/dhl-jpr-agra_1635429381.jpg" },
+    { id: 3, name: "Amritsar Tour Package", description: "9 Nights/10 Days", image: "https://dynamic.tourtravelworld.com/package-images/photo-small/dir_15/439900/261219.jpg" },
+    { id: 4, name: "Kerala Tour Package", description: "6 Nights/7 Days", image: "https://dynamic.tourtravelworld.com/package-images/photo-big/dir_17/494899/309078.jpg" },
+    { id: 5, name: "Goa Beach Package", description: "3 Nights/4 Days", image: "https://5.imimg.com/data5/SELLER/Default/2022/6/CN/CN/SB/147670257/best-selling-goa-trip-package-for-friends-4-days-3-nights-500x500.png" },
+  ];
 
-function Carousel() {
-  const [hover, setHover] = useState(false);
-
-  useEffect(() => {
-    const slider = document.querySelector('.carousel');
-    let scrollAmount = 0;
-
-    const slide = () => {
-      if (hover) return;
-      scrollAmount += 1;
-      slider.scrollLeft = scrollAmount;
-      
-      if (slider.scrollLeft >= slider.scrollWidth / 2) {
-        slider.scrollLeft = 0;
-        scrollAmount = 0;
-      }
-    };
-
-    const interval = setInterval(slide, 10);
-    return () => clearInterval(interval);
-  }, [hover]);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,  // Enables automatic sliding
+    autoplaySpeed: 2500, // Adjusts the delay (2.5 seconds per slide)
+    centerMode: false, // Ensures partial visibility of next and previous slides
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false, // Disables centering for better fit
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  };
 
   return (
-    <div className="main-container " >
-      <h2 className="section-title">Popular Tour Packages</h2>
-      <div 
-        className="carousel-container"
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
-        <div className="carousel">
-          {[...cards, ...cards].map((card, i) => (
-            <div className="card" key={i}>
-              <img src={card.img} alt={card.title} />
-              <h4>{card.title}</h4>
-              <p>📍 {card.places}</p>
-              <div className="icons">
-                <FaHotel /> Hotel <FaUtensils /> Food <FaCar /> Car Rental
-              </div>
-              <div className="footer">
-                <span className="nights">{card.nights}</span>
-                <button className="view-btn">VIEW TOUR</button>
-              </div>
+    <div className="slider-container-a">
+      <h1 className="tittle-a">Our Popular Pakages </h1>
+      <Slider {...settings}>
+        {cardsData.map((card) => (
+          <div key={card.id} className="card-a">
+            <div className="card-image-a">
+              <img src={card.image} alt={card.name} />
             </div>
-          ))}
-        </div>
-      </div>
+            <div className="card-content-a">
+              <h3>{card.name}</h3>
+              <p>{card.description}</p>
+              <button className="view-more-a">View More</button>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
-}
+};
 
-export default Carousel;
+export default CardSlider;

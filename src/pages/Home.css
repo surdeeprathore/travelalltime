@@ -1,4 +1,72 @@
- 
+.background-section {
+  background-image: url('https://cdn.wallpapersafari.com/6/99/0LVtjF.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;  /* Ensures proper spacing */
+  color: white;
+  min-height: auto;  /* Prevents unnecessary extra height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-section .container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.background-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; /* Aligns text properly */
+}
+
+.background-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: orange;
+  font-weight: 600;
+}
+
+.background-section p {
+  font-size: 16px;
+  display: flex;
+  color: black;
+  align-items:center;
+  justify-content:center;
+  gap: 8px; /* Space between icon & text */
+  line-height: 1.5; /* Ensures proper line spacing */
+  text-align: left;
+  margin: 8px 0; /* Keeps spacing consistent */
+}
+
+.background-section p svg {
+  flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+/* 🔹 Responsive Fix for Mobile */
+@media (max-width: 992px) {
+  .background-section {
+    padding: 50px 20px;
+  }
+
+  .background-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .background-section h2 {
+    font-size: 22px;
+  }
+
+  .background-section p {
+    font-size: 14px;
+    justify-content: center; /* Centering text */
+    text-align: center;
+  }
+}
 
 .footer-promo {
   color:black;

@@ -30,7 +30,8 @@ const Dashboard = () => {
       
       <section>
         <h3>Popular Destinations</h3>
-        <button className="add-btn2">Add Destination</button>
+        <Link to='/PostDestination'>
+        <button className="add-btn2">Add Destination</button></Link>
         <ul>
           {destinations.map(dest => (
             <li key={dest.id}  className='dashboard_list'>
@@ -46,7 +47,8 @@ const Dashboard = () => {
       
       <section>
         <h3>Gallery</h3>
-        <button className="add-btn2">Add Image</button>
+        <Link to='/PostDestination'>
+        <button className="add-btn2">Add Image</button></Link>
         <ul>
           {gallery.map(img => (
             <li key={img.id} className='dashboard_list'>
@@ -62,7 +64,8 @@ const Dashboard = () => {
       
       <section>
         <h3>Feedbacks</h3>
-        <button className="add-btn2">Add feedback</button>
+        <Link to='/PostDestination'>
+        <button className="add-btn2">Add feedback</button></Link>
         <ul>
           {feedbacks.map(feed => (
             <li key={feed.id} className='dashboard_list'>
@@ -80,7 +83,8 @@ const Dashboard = () => {
       
       <section>
         <h3>Latest Blog Posts</h3>
-        <button className="add-btn2">Add Blog Post</button>
+        <Link to='/PostDestination'>
+        <button className="add-btn2">Add Blog Post</button></Link>
         <ul>
           {blogPosts.map(post => (
             <li key={post.id} className='dashboard_list'>
@@ -96,7 +100,8 @@ const Dashboard = () => {
       
       <section>
         <h3>Customer Testimonials</h3>
-        <button className="add-btn2">Add Testimonial</button>
+        <Link to='/PostDestination'>
+        <button className="add-btn2">Add Testimonial</button></Link>
         <ul>
           {testimonials.map(testimonial => (
             <li key={testimonial.id} className='dashboard_list'>

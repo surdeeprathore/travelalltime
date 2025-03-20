@@ -50,7 +50,7 @@ function TestimonialSlider() {
         {/* Testimonial Carousel */}
         <div className="col-lg-6 col-md-12 d-flex justify-content-center">
           <div className="testimonial-container">
-            <h2 className="text-center">Our Happy Travellers</h2>
+            <h1 className="tittle-a">Our Happy Travellers</h1>
             <Carousel interval={3000} indicators={false} className="w-100">
               {testimonials.map((item, index) => (
                 <Carousel.Item key={index}>
@@ -73,19 +73,8 @@ function TestimonialSlider() {
           </div>
         </div>
 
-        {/* Why Choose Us? */}
-        <div className="col-lg-6 col-md-12 d-flex justify-content-center">
-          <div className="why-choose-us">
-            <h2>Why Choose Us?</h2>
-            <ul>
-              <li><FaCheckCircle /> 98% Customer Satisfaction</li>
-              <li><FaCheckCircle /> 24/7 Customer Support</li>
-              <li><FaCheckCircle /> Hassle-Free Booking Process</li>
-              <li><FaCheckCircle /> Best Price Guarantee</li>
-              <li><FaCheckCircle /> Trusted by 10,000+ Travellers</li>
-            </ul>
-          </div>
-        </div>
+       
+        
 
       </div>
     </div>

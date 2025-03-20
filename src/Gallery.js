@@ -1,62 +1,60 @@
-import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Gallery.css';
-
-const images = [
-  'https://i0.wp.com/globalgrasshopper.com/wp-content/uploads/2011/01/Most-beautiful-places-to-visit-in-India.jpg',
-  'https://xplro.com/wp-content/uploads/2024/04/Xplro-2024-04-19T211258.491.jpg',
-  'https://hazrulremo.com/wp-content/uploads/2023/09/Salim-Chishti--1024x577.jpg',
-  'https://www.holidify.com/images/cmsuploads/compressed/1030_20190404091854.jpg',
-  'https://tourwithrahul.com/wp-content/uploads/2020/07/humayun-s-tomb-under-blue-sky-3672388-scaled.jpg',
-  'https://www.nritravelogue.com/wp-content/uploads/2023/07/historical-places-india.jpg',
-  'https://blog.thomascook.in/wp-content/uploads/2018/04/placestovisitinindiablog.jpg',
-  'https://media.timeout.com/images/105242423/750/422/image.jpg',
-  'https://cdn.siasat.com/wp-content/uploads/2024/03/SIS-66.png'
-];
-
-const shuffleArray = (array) => {
-  return [...array].sort(() => Math.random() - 0.5);
-};
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Gallery.css"; // Import custom styles
 
 const Gallery = () => {
-  const [shuffledImages, setShuffledImages] = useState(images);
+  const cards = [
+    { id: 1, text: "Jaipur Tour Package", description: "Jaipur, the capital of Rajasthan, is a mesmerizing blend of royal heritage, vibrant culture, and architectural marvels. Known as the Pink City, Jaipur boasts magnificent forts, bustling bazaars, and mouth-watering cuisine.", image: "https://www.kabiratours.com/wp-content/uploads/2018/03/one-day-jaipur-sightseeing-tour.jpg" },
+    { id: 2, text: "Golden Triangle Tour", description: "Embark on a journey through India’s Golden Triangle, covering Delhi, Agra, and Jaipur—a perfect blend of history, culture, and architectural splendor.", image: "https://www.indiaprivatedriver.com/storage/uploads/dhl-jpr-agra_1635429381.jpg" },
+    { id: 3, text: "Amritsar Tour", description: "The Golden Temple, also known as Sri Harmandir Sahib, is the holiest shrine of Sikhism and a symbol of peace, devotion, and spiritual harmony. Located in Amritsar, Punjab, this breathtaking temple is not just an architectural wonder but also a place of deep faith and selfless service.", image: "https://dynamic.tourtravelworld.com/package-images/photo-small/dir_15/439900/261219.jpg" },
+    { id: 4, text: "Kerala Tour", description: "Welcome to Kerala, famously known as “God’s Own Country”! Nestled between the Arabian Sea and the Western Ghats, Kerala is a land of breathtaking landscapes, lush greenery, tranquil backwaters, misty hill stations, and exotic wildlife.", image: "https://dynamic.tourtravelworld.com/package-images/photo-big/dir_17/494899/309078.jpg" },
+    { id: 5, text: "Goa Beach Package", description: "Imagine soft golden sands, swaying palm trees, and the soothing sound of waves—India’s breathtaking beaches offer the perfect escape for relaxation and adventure alike! Whether you seek peaceful solitude, thrilling water sports, or vibrant beach parties, there's a beach destination just for you.", image: "https://5.imimg.com/data5/SELLER/Default/2022/6/CN/CN/SB/147670257/best-selling-goa-trip-package-for-friends-4-days-3-nights-500x500.png" },
+  ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShuffledImages(shuffleArray(images));
-    }, 3000); // Shuffle every 3 seconds
-
-    return () => clearInterval(interval);
-  }, []);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0px",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
-    <div className="container1 text-center">
-      <h1>Popular Destinations</h1>
-      <div className="row">
-        <div className="col-md-8">
-          <div className="row">
-            {shuffledImages.map((img, index) => (
-              <div key={index} className="col-md-4 col-6 p-2 fade-animation">
-                <img
-                  src={img}
-                  alt={`Image ${index}`}
-                  className="img-fluid rounded shadow zoom"
-                />
+    <div className="carousel-container">
+      <Slider {...settings}>
+        {cards.map((card) => (
+          <div key={card.id} className="carousel-card">
+            <div className="carousel-image">
+              <img src={card.image} alt={card.text} />
+              <div className="carousel-overlay">
+                <h3>{card.text}</h3>
+                <p>{card.description}</p>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-        <div className="col-md-4 text-start p-4 bullet-column">
-          <h3>Why Visit These Places?</h3>
-          <ul className="bullet-points">
-            <li>Experience breathtaking landscapes</li>
-            <li>Explore rich historical heritage</li>
-            <li>Enjoy vibrant local cultures</li>
-            <li>Capture stunning photography moments</li>
-            <li>Discover unique architectural marvels</li>
-          </ul>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };

@@ -14,6 +14,7 @@ import GoaTour from './pages/GoaTour.js';
 import GoldenTriangle from './pages/GoldenTriangle.js';
 import SameDayTour from './pages/SameDayTour.js';
 import Dashboard from './pages/Dashbaord.js';
+import PostDestination from './pages/PostDestination.js';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
          <Route path="/aboutus" element={<AboutUs />} /> 
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/PostDestination" element={<PostDestination />} />
         <Route path="/himachal" element={<HimachalTour />} />
         <Route path="/rajasthan" element={<RajasthanTour />} />
         <Route path="/kashmir" element={<KashmirTour />} />
