@@ -55,13 +55,14 @@ function TestimonialSlider() {
               {testimonials.map((item, index) => (
                 <Carousel.Item key={index}>
                   <div className="testimonial-card">
+                    <div>
                     <img
                       src={item.image}
                       alt={item.name}
                       className="rounded-circle shadow-lg"
                       width={100}
                       height={100}
-                    />
+                    /></div>
                     <h5 className="mt-3 mb-1">{item.name}</h5>
                     <small className="text-muted">{item.role}</small>
                     <p className="text-center mt-3">{item.review}</p>
@@ -70,6 +71,7 @@ function TestimonialSlider() {
                 </Carousel.Item>
               ))}
             </Carousel>
+              
           </div>
         </div>
 

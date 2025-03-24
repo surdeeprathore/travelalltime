@@ -41,11 +41,13 @@ const Home = () => {
     <div className="row">
       <div className="col-md-4 text-center">
         <h2>Why Choose Us?</h2>
-          <p><FaCheckCircle color="green" /> 98% Customer Satisfaction</p>
-          <p><FaCheckCircle color="green" /> 98% Customer Satisfaction</p>
-          <p><FaCheckCircle color="green" /> 24/7 Customer Support</p>
-          <p><FaCheckCircle color="green" /> Hassle-Free Booking Process</p>
-         <p><FaCheckCircle color="green" /> Best Price Guarantee</p>
+        <ul></ul>
+        {/* <FaCheckCircle color="green" />  */}
+          <p>  <FaCheckCircle color="green" /> 98% Customer Satisfaction</p>
+          <p>  <FaCheckCircle color="green" /> 98% Customer Satisfaction</p>
+          <p>  <FaCheckCircle color="green" /> 24/7 Customer Support</p>
+          <p>  <FaCheckCircle color="green" /> Hassle-Free Booking Process</p>
+         <p> <FaCheckCircle color="green" /> Best Price Guarantee</p>
           
       
       </div>
@@ -63,9 +65,11 @@ const Home = () => {
   </div>
 </div>
 
-
-
-       <TestimonialSlider/>
+ 
+         <div  className="footer-banner-a" style={{ 
+        backgroundImage: "url('https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-travel-around-the-world-travel-poster-template-image_140335.jpg')" }
+        }>    <TestimonialSlider/></div>      
+    
        <div className="footer-banner" style={{ 
         backgroundImage: "url('https://png.pngtree.com/background/20220725/original/pngtree-illustration-travel-landmarks-architecture-morocco-in-marrakech-picture-image_1772376.jpg')" }
         }

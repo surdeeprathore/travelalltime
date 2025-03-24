@@ -10,13 +10,20 @@
   align-items: center;
   justify-content: center;
 }
-
+.footer-banner-a {
+  background-attachment: fixed;
+  background-size: cover;
+ 
+}
 .background-section .container {
   max-width: 1200px;
   margin: auto;
   text-align: center;
 }
-
+.background-section .container p{
+text-align:left;
+margin-left: 75px;
+}
 .background-section .row {
   display: flex;
   justify-content: space-between;
@@ -34,8 +41,8 @@
   font-size: 16px;
   display: flex;
   color: black;
-  align-items:center;
-  justify-content:center;
+  /* align-items:center; */
+  /* justify-content:center; */
   gap: 8px; /* Space between icon & text */
   line-height: 1.5; /* Ensures proper line spacing */
   text-align: left;
@@ -63,8 +70,8 @@
 
   .background-section p {
     font-size: 14px;
-    justify-content: center; /* Centering text */
-    text-align: center;
+    /* justify-content: center;  
+    text-align: center; */
   }
 }
 

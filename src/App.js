@@ -14,6 +14,8 @@ import GoaTour from './pages/GoaTour.js';
 import GoldenTriangle from './pages/GoldenTriangle.js';
 import SameDayTour from './pages/SameDayTour.js';
 import Dashboard from './pages/Dashbaord.js';
+import Blog from './pages/Blog.js';
+import BlogInside from './pages/BlogInside.js';
 import PostDestination from './pages/PostDestination.js';
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
          <Route path="/aboutus" element={<AboutUs />} /> 
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/blogsinside" element={<BlogInside />} />
         <Route path="/PostDestination" element={<PostDestination />} />
         <Route path="/himachal" element={<HimachalTour />} />
         <Route path="/rajasthan" element={<RajasthanTour />} />
@@ -38,6 +42,7 @@ function App() {
          <Route path="/golden-triangle" element={<GoldenTriangle />} />
         <Route path="/same-day" element={<SameDayTour />} />  
       </Routes>
+ 
       <Footer />
     </>
   );

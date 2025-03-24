@@ -6,27 +6,28 @@ function Footer() {
     <div className='footer-container' style={{ background: 'linear-gradient(90deg, #005aa7, #fffde4)' }}>
       <div className='footer-content'>
         <div className='footer-section'>
-          <h3>Popular Destinations</h3>
-          <ul>
-            <li>Greece</li>
-            <li>Bulgaria</li>
-            <li>Egypt</li>
-            <li>Turkey</li>
-            <li>Croatia</li>
-          </ul>
+          <h3>Traveller</h3>
+           <p className='text-align-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        
         </div>
         <div className='footer-section'>
-          <h3>Working Hours</h3>
-          <ul>
-            <li>Monday - Friday 09:00-19:00</li>
-            <li>Saturday - 10:00-14:00</li>
-            <li>Sunday - 12:00-18:00</li>
-          </ul>
-          <p>Call charges apply according to operator rates.</p>
+           <h3>Popular Desitanation</h3>
+           <p>Rajasthan Tour Packages
+ 
+</p>
+           <p>Kerala Tour Packages</p>
+           <p>Golden Triangle Tours</p>
+           <p>Goa Tour Packages</p>
         </div>
         <div className='footer-section newsletter'>
-          <h3>Newsletter</h3>
-          <input type='email' placeholder='E-Mail Address' /><button>→</button>
+          <h3>Contact Imformation</h3>
+               <h4>Trveller.com PVT. LTD.</h4>
+               <p>
+               D-7/296, First Floor, Near Rohini West Metro Station, Sector - 6, Rohini Delhi - 110085</p>
+               <p>
+               info@joyplusholidays.com</p>
+               <p>
+               +91-93104-15267, 011-35959936</p>
         </div>
       </div>
       <div className='footer-bottom'>

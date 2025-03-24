@@ -24,6 +24,7 @@ function BasicExample() {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" className="nav-link" onClick={() => setExpanded(false)}>HOME</Nav.Link>
             <Nav.Link as={Link} to="/aboutus" className="nav-link" onClick={() => setExpanded(false)}>ABOUT US</Nav.Link>
+            <Nav.Link as={Link} to="/blogs" className="nav-link" onClick={() => setExpanded(false)}>BLOGS</Nav.Link>
             <NavDropdown 
               title="TOUR PACKAGES" 
               id="basic-nav-dropdown" 

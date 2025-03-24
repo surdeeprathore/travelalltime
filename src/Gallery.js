@@ -42,6 +42,7 @@ const Gallery = () => {
 
   return (
     <div className="carousel-container">
+      <h1 className="tittle-a">Popular Destination</h1>
       <Slider {...settings}>
         {cards.map((card) => (
           <div key={card.id} className="carousel-card">

@@ -24,20 +24,20 @@
   font-size: 24px;
 }
 
-.footer-section ul {
+/* .footer-section ul {
   list-style: none;
   padding: 0;
-}
+} */
 
-.footer-section ul li {
+/* .footer-section ul li {
   margin-bottom: 10px;
   transition: 0.3s;
-}
+} */
 
-.footer-section ul li:hover {
+/* .footer-section ul li:hover {
   color: #1c89ea;
   transform: scale(1.05);
-}
+} */
 
 .newsletter-input {
   display: flex;

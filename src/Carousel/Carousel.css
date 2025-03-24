@@ -87,8 +87,11 @@
 /* Adjust margin between slides */
 .slick-slide {
   padding: 10px;
-}
 
+}
+arrows{
+  color: #005aa7;
+}
 /* Ensure full visibility of cards */
 .slick-list {
   color: #005aa7;
